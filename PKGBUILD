@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="${pkgbase} service for s6"
 arch=(x86_64)
 license=('ISC')
-depends=("${_depends}" 's6' 's6-boot' 's6opts')
+depends=("${_depends}" 's6' 's6-boot' 's6opts' 'libcap')
 makedepends=('util-linux' 'findutils')
 conflicts=()
 source=("$pkgname::git+https://github.com/obarun-pkgbuild/${pkgname}#branch=master")
